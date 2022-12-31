@@ -31,7 +31,6 @@ async function run() {
     console.log("DATABASe CONNECTED");
 
     // Get API FOR FINDING All selectors
-
     app.get("/sectors", async (req, res) => {
       const cursor = sectorCollection.find({});
       const result = await cursor.toArray();
